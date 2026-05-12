@@ -19,7 +19,7 @@ export function Contact() {
                 {[
                   { icon: Phone, label: 'Call Us', value: '+92 300 0000000' },
                   { icon: Mail, label: 'Email', value: 'support@hyrestate.online' },
-                  { icon: MapPin, label: 'Visit', value: 'DHA Phase 6, Karachi, Pakistan' },
+                  { icon: MapPin, label: 'Visit', value: 'Karachi, Pakistan' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center space-x-6">
                     <div className="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
@@ -58,7 +58,7 @@ export function Contact() {
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 font-bold">Message</label>
-                  <textarea rows={4} className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white outline-none focus:border-gold-500/50 resize-none" placeholder="How can we help you success in Dubai?"></textarea>
+                  <textarea rows={4} className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white outline-none focus:border-gold-500/50 resize-none" placeholder="How can we help you succeed in Pakistan?"></textarea>
                 </div>
                 <button className="w-full py-5 rounded-2xl gold-gradient text-dark-900 font-extrabold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform">
                   Send Message <Send className="w-5 h-5" />
@@ -74,7 +74,7 @@ export function Contact() {
         <img 
           src="https://images.unsplash.com/photo-1582672097782-5f506c47ec86?auto=format&fit=crop&q=80&w=2070" 
           className="w-full h-full object-cover" 
-          alt="Dubai Map" 
+          alt="Pakistan Map" 
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-dark-900/40"></div>
@@ -85,7 +85,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="font-bold">HyrEstate HQ</p>
-                <p className="text-xs text-gray-500">Platinum Tower, Jumeirah Lake Towers</p>
+                <p className="text-xs text-gray-500">Karachi, Pakistan</p>
               </div>
             </div>
         </div>

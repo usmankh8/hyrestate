@@ -16,7 +16,7 @@ export function Jobs() {
       id: '1',
       title: 'Luxury Property Consultant',
       company: 'Zameen.com',
-      location: 'DHA Phase 6, Karachi',
+      location: 'Karachi, Pakistan',
       salary: '85k - 100k PKR + High Comm',
       type: 'Full-time',
       category: 'Residential',
