@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Job": {
+      "title": "Job Posting",
+      "description": "A job opening listed on the platform",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "company": { "type": "string" },
+        "location": { "type": "string" },
+        "salary": { "type": "string" },
+        "type": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "company", "location"]
+    },
+    "Application": {
+      "title": "Job Application",
+      "description": "A user's application for a job",
+      "type": "object",
+      "properties": {
+        "jobId": { "type": "string" },
+        "userId": { "type": "string" },
+        "applicantName": { "type": "string" },
+        "email": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "approved", "denied"] },
+        "appliedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["jobId", "userId", "applicantName", "status"]
+    }
+  },
+  "firestore": {
+    "jobs": {
+      "schema": "Job",
+      "description": "Collection of all job postings"
+    },
+    "applications": {
+      "schema": "Application",
+      "description": "Collection of all user job applications"
+    }
+  }
+}
